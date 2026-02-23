@@ -1,0 +1,22 @@
+[2026-02-22 21:52:16] PING google.com
+PING google.com (192.178.192.100) 56(84) bytes of data.
+64 bytes from lcyyzn-in-f100.1e100.net (192.178.192.100): icmp_seq=1 ttl=115 time=5.24 ms
+64 bytes from lcyyzn-in-f100.1e100.net (192.178.192.100): icmp_seq=2 ttl=115 time=5.71 ms
+64 bytes from lcyyzn-in-f100.1e100.net (192.178.192.100): icmp_seq=3 ttl=115 time=5.56 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.239/5.502/5.711/0.196 ms
+----------------------------------------
+[2026-02-22 21:53:11] PING asd
+Ping failed: Host unreachable or request timed out.----------------------------------------
+[2026-02-22 21:56:33] PING google.com
+PING google.com (192.178.192.102) 56(84) bytes of data.
+64 bytes from lcyyzn-in-f102.1e100.net (192.178.192.102): icmp_seq=1 ttl=114 time=4.49 ms
+64 bytes from lcyyzn-in-f102.1e100.net (192.178.192.102): icmp_seq=2 ttl=114 time=6.40 ms
+64 bytes from lcyyzn-in-f102.1e100.net (192.178.192.102): icmp_seq=3 ttl=114 time=6.04 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 4.489/5.641/6.397/0.827 ms
+----------------------------------------
