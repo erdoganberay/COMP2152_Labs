@@ -1,6 +1,6 @@
 # ============================================================
 #  WEEK 12 LAB — Q2: DUNDER METHODS
-#  COMP2152 — [Your Name Here]
+#  COMP2152 — Beray Erdogan
 # ============================================================
 
 
@@ -15,41 +15,30 @@ class Finding:
     def __str__(self):
         return f"[{self.severity}] {self.subdomain} — {self.title}"
 
-    # TODO: Write __eq__(self, other)
-    #   Return True if self.subdomain == other.subdomain
-    #   AND self.title == other.title
+
+
+
+
+
     def __eq__(self, other):
-        pass
+        return self.subdomain == other.subdomain and self.title == other.title
 
-    # TODO: Write __lt__(self, other)
-    #   Compare severity using self.severity_rank
-    #   Return True if self's rank is LOWER than other's rank
-    #   This lets sorted() arrange findings from LOW → HIGH
     def __lt__(self, other):
-        pass
-
-
+        return self.severity_rank[self.severity] < self.severity_rank[other.severity]
+    
 class Report:
-
     def __init__(self, team_name):
         self.team_name = team_name
         self.findings = []
-
     def add(self, finding):
         self.findings.append(finding)
-
-    # TODO: Write __len__(self)
-    #   Return the number of findings in self.findings
-    #   This makes len(report) work
     def __len__(self):
-        pass
+        return len(self.findings)
 
-    # TODO: Write __add__(self, other)
-    #   Create a new Report with team_name = f"Merged: {self.team_name} + {other.team_name}"
-    #   Set new_report.findings = self.findings + other.findings
-    #   Return the new report
     def __add__(self, other):
-        pass
+        new_report = Report(f"Merged: {self.team_name} + {other.team_name}")
+        new_report.findings = self.findings + other.findings
+        return new_report
 
 
 # --- Main (provided) ---
